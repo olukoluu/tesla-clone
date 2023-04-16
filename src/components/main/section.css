@@ -1,0 +1,141 @@
+section:nth-of-type(1) {
+  background-image: url("../images/Model-S.jpg");
+}
+
+section:nth-of-type(2) {
+  background-image: url("../images/Model-3.jpg");
+}
+
+section:nth-of-type(3) {
+  background-image: url("../images/Model-X.jpg");
+}
+
+section:nth-of-type(4) {
+  background-image: url("../images/Model-Y.jpg");
+}
+
+section:nth-of-type(5) {
+  background-image: url("../images/Solarroof.jpg");
+}
+
+section:nth-of-type(6) {
+  background-image: url("../images/SolarPanels.jpg");
+}
+
+section:nth-of-type(7) {
+  background-image: url("../images/accesories.jpg");
+}
+
+section {
+  background-position: center;
+  background-size: cover;
+  height: calc(100vh - 50px);
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.5s ease-in-out;
+  scroll-snap-align: end;
+  scroll-snap-stop: always;
+}
+
+section .sect__text{
+  text-align: center;
+}
+
+section .sect__text h2 {
+  font-size: 40px;
+  font-weight: normal;
+}
+
+section .sect__text p {
+  font-size: 14px;
+  color: #3d3d3d;
+  text-align: center;
+  margin-top: 10px;
+}
+
+section .sect__text p span {
+  border-bottom: 1px solid;
+  cursor: pointer;
+}
+
+.sect__btns {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.sect__btns button {
+  width: 47%;
+  font-weight: 900;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.596);
+  color: #3d3d3d;
+  cursor: pointer;
+}
+
+.sect__btns button:first-of-type {
+  background-color: #3d3d3dc4;
+  color: #fff;
+}
+
+section:last-of-type .sect__btns button:last-of-type {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  section:nth-of-type(1) {
+    background-image: url("../images/model-smobile.jpg");
+  }
+
+  section:nth-of-type(2) {
+    background-image: url("../images/model-3mobile.jpg");
+  }
+
+  section:nth-of-type(3) {
+    background-image: url("../images/model-xmobile.jpg");
+  }
+
+  section:nth-of-type(4) {
+    background-image: url("../images/model-ymobile.jpg");
+  }
+
+  section:nth-of-type(5) {
+    background-image: url("../images/Solarroof.jpg");
+  }
+
+  section:nth-of-type(6) {
+    background-image: url("../images/solarpanelmobile.jpg");
+  }
+
+  section:nth-of-type(7) {
+    background-image: url("../images/accesories.jpg");
+  }
+
+  section {
+    padding: 80px 20px 50px;
+  }
+
+  .sect__btns {
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .sect__btns button {
+    width: 100%;
+  }
+  
+section .sect__text h2 {
+    font-size: 30px;
+  }
+  
+section .sect__text{
+    text-align: center;
+  }
+}
